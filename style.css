@@ -64,8 +64,9 @@ header img{
 .form {
    text-align: center;
    margin: 1rem 0 4rem;
+   position: relative;
 }
-input[type="text"] {
+input[type="email"] {
     width: 80%;
     height: 45px;
     padding-right: 60px;
@@ -94,6 +95,23 @@ button[type="submit"] {
     font-size: 16px;
 }
 
+
+/* error */
+.form p {
+    font-size: 14px;
+    color: var(--SoftRed);
+    margin-left: 15px;
+}
+
+.error{
+    display: none;
+    position: absolute;
+}
+.error-show {
+    display: block;
+    top: 12px;
+    left: 70%;
+}
 /* footer */
 .attribution { font-size: 11px; text-align: center; margin:1rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -147,7 +165,7 @@ button[type="submit"] {
         width: 80%;
         margin-top: 2rem;
      }
-    input[type="text"] {
+    input[type="email"] {
         width: 90%;
         padding-right: 60px;
         padding-left: 1rem;
